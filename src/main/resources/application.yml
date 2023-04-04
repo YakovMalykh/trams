@@ -8,3 +8,13 @@ spring:
       ddl-auto: update
   liquibase:
     change-log: classpath:liquibase/changelog.yml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  info:
+    git:
+      mode: full
+
+
